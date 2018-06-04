@@ -1,13 +1,9 @@
-
-
-
-
 <h1 style="color:blue;"> Wahalla </h1>
 
 <h3>A note taking app </h3>
 
-<a href="https://note-dc934.firebaseapp.com"> Wahalla Hosting URL </a>
-Project Console: https://console.firebase.google.com/project/note-dc934/overview
+<a href="https://note-dc934.firebaseapp.com"> Wahalla  </a>
+
  
 <h4>  Project Description </h4>
 <p> This is an app for students where they can take notes and save it online and its 100% free</p>
@@ -48,3 +44,16 @@ Project Console: https://console.firebase.google.com/project/note-dc934/overview
 </p>
 
 
+<h3> References </h3>
+<ul> 
+    <li> https://css-tricks.com/textarea-tricks/</li>
+    <li> https://redux.js.org/basics/example-todo-list</li>
+    <li> https://www.youtube.com/watch?v=93p3LxR9xfM&t=2488s </li>
+    <li> https://www.youtube.com/watch?v=1w-oQ-i1XB8&t=406s</li>
+    <li> https://www.youtube.com/watch?v=mwNATxfUsgI</li>
+    <li> https://www.youtube.com/watch?v=Gl-qlxfTJHE</li>
+    <li> http://tobiasahlin.com/spinkit/</li>
+    <li> </li>
+</ul>
+
+<h4>

@@ -38,28 +38,28 @@ class Update extends Component {
 
     render() {
         return (
-            <div className="update">
+            <div className="updateNote">
                 <form onSubmit={this.handleSubmit}>
                         <input
-                        className="update__input"
-                        onChange={this.handleChange}
-                        value={this.state.title}
-                        type="text"
-                        name="title"
-                        required
+                            className="updateNote__input"
+                            onChange={this.handleChange}
+                            value={this.state.title}
+                            type="text"
+                            name="title"
+                            required
                         />
 
                         <br/>
                         <textarea
-                        className="update__text"
-                        onChange={this.handleChange}
-                        value={this.state.body}
-                        type="text"
-                        name="body"
-                        required
+                            className="updateNote__text"
+                            onChange={this.handleChange}
+                            value={this.state.body}
+                            type="text"
+                            name="body"
+                            required
                         />
                         <br/>
-                        <button className="update__button">Update</button>
+                        <button className="updateNote__button">Update</button>
                 </form>
             </div>
            

@@ -71,7 +71,7 @@ class App extends Component {
                                 {note.uid === this.props.user.uid && (
                                 <div> 
                                     <button className="savedNotes__del" onClick={() => this.props.deleteNote(key)}>
-                                    Delete
+                                        Delete
                                     </button>
                                     <button className="savedNotes__edit">
                                         <Link to={`/${key}/edit`}>Update</Link>

@@ -341,19 +341,19 @@ input:focus, textarea, button {
     border: 2px solid rgba(15, 15, 15, 0.781);
     border: transparent; }
 
-.update {
+.updateNote {
   width: 80vw;
   margin: 0 auto;
   text-align: center;
   transform: translate(0, 13rem); }
-  .update__input, .update__text {
+  .updateNote__input, .updateNote__text {
     text-align: center;
     width: 80%;
     font-size: 2rem;
     padding: 1rem; }
-  .update__text {
+  .updateNote__text {
     height: 30vh; }
-  .update__button {
+  .updateNote__button {
     padding: 1rem;
     background-color: rgba(3, 3, 3, 0.89);
     color: rgba(255, 255, 255, 0.829);
