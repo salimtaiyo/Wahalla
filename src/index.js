@@ -15,7 +15,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Nav from './components/Nav.jsx';
 import Login from './components/Login';
 import LoadingComponent from './components/LoadingComponent';
-import AuthenticatedComponent from './components/AuthenticatedComponent';
+import Auth from './components/Auth';
 import Update from './components/Update.jsx';
 
 // redux store 
@@ -29,11 +29,11 @@ ReactDOM.render(
                     <Switch>
                         <Route path="/login" component={Login} exact={true} />
                         <Redirect from="/logout" to="/login" />
-                        <AuthenticatedComponent>
+                        <Auth>
                             <Nav />
                             <Route path="/:id/edit" component={Update} exact={true} />
                             <Route path="/" component={App} exact={true} />
-                        </AuthenticatedComponent>
+                        </Auth>
                     </Switch>
                 </div>
             </LoadingComponent>

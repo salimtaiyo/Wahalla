@@ -1,0 +1,64 @@
+@keyframes change{
+
+    0%{
+        background-color: rgba(247, 242, 242, 0.945);
+        color: rgba(32, 32, 32, 0.945);
+    }
+
+    20%{
+        background-color: rgba(36, 36, 36, 0.945);
+        color: rgba(255, 255, 255, 0.945);
+
+    }
+
+    40%{
+        background-color: rgba(116, 38, 38, 0.945);
+        color: rgba(255, 255, 255, 0.945);
+
+    }
+
+    60%{
+        background-color: rgba(57, 151, 163, 0.945);
+        color: rgba(255, 255, 255, 0.945);
+
+    }
+
+    80%{
+        // background-color: rgba(167, 201, 74, 0.945);
+        background-color: rgba(39, 113, 131, 0.945);
+        color: rgba(255, 255, 255, 0.945);
+
+    }
+
+    100%{
+        background-color: rgba(247, 242, 242, 0.945);
+        color: rgba(32, 32, 32, 0.945);
+
+    }
+
+}
+
+
+// images 
+
+@keyframes fadeImg
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fadeImg2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fadeImg3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}

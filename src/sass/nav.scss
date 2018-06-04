@@ -1,5 +1,9 @@
 .header{
     background-color: rgba(0, 0, 0, 0.801);
+    & a{
+        transition: all .3s linear;
+        text-decoration: none;
+    }
     &__logo{
         font-size: 4rem;
         font-family: 'Satisfy', cursive;

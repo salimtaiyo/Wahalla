@@ -2,7 +2,6 @@
 // login container
 .login{
     animation: change 30s infinite linear;
-    // animation-delay: 5s;
     height: 100vh;
     z-index: 100;
     overflow: hidden;
@@ -36,17 +35,18 @@
         margin-left: 3rem;
 
         &--header{
-            font-size: 4rem;
+            font-size: 3rem;
         }
 
         &--sub{
-            font-size: 2rem;
+            font-size: 1.8rem;
+            
         }
 
         &--button{
             color: white;
             border: transparent;
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.842);
             padding: 1.4rem;
             font-size: 1.4rem;
         }
@@ -90,95 +90,3 @@
     
 }
 
-@keyframes change{
-
-    0%{
-        background-color: rgba(247, 242, 242, 0.945);
-        color: rgba(32, 32, 32, 0.945);
-    }
-
-    20%{
-        
-        // background-image: url('');
-        background-color: rgba(36, 36, 36, 0.945);
-        color: rgba(255, 255, 255, 0.945);
-
-    }
-
-    40%{
-        background-color: rgba(116, 38, 38, 0.945);
-        color: rgba(255, 255, 255, 0.945);
-
-    }
-
-    60%{
-        background-color: rgba(57, 151, 163, 0.945);
-        color: rgba(255, 255, 255, 0.945);
-
-    }
-
-    80%{
-        // background-color: rgba(167, 201, 74, 0.945);
-        background-color: rgba(39, 113, 131, 0.945);
-        color: rgba(255, 255, 255, 0.945);
-
-    }
-
-    100%{
-        background-color: rgba(247, 242, 242, 0.945);
-        color: rgba(32, 32, 32, 0.945);
-
-    }
-
-}
-
-
-// images 
-
-
-// @keyframes fadeImg
-// {
-//   0%   {opacity:1}
-//   30% { opacity: 0;
-//         display: none;
-//     }
-//   66.666% { opacity: 0}
-//   100% { opacity: 0}
-// }
-// @keyframes fadeImg2
-// {
-//   0%   {opacity:0}
-//   40% { opacity: 1}
-//   58% { opacity: 0 }
-//   100% { opacity: 0}
-// }
-// @keyframes fadeImg3
-// {
-//   0%   {opacity:0}
-//   33.333% { opacity: 0}
-//   70% { opacity: 1}
-//   92% { opacity: 0}
-//   100%{ opacity: 0}
-// }
-
-@keyframes fadeImg
-{
-  0%   {opacity:1}
-  33.333% { opacity: 0}
-  66.666% { opacity: 0}
-  100% { opacity: 1}
-}
-@keyframes fadeImg2
-{
-  0%   {opacity:0}
-  33.333% { opacity: 1}
-  66.666% { opacity: 0 }
-  100% { opacity: 0}
-}
-@keyframes fadeImg3
-{
-  0%   {opacity:0}
-  33.333% { opacity: 0}
-  66.666% { opacity: 1}
-  100% { opacity: 0}
-}

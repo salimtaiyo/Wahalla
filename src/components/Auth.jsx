@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
-class AuthenticatedComponent extends Component {
+class Auth extends Component {
     componentDidUpdate() {
     // when loading is completed push to login page
         const { userLoading, user } = this.props;
@@ -23,4 +23,4 @@ function mapStateToProps(state) {
     };
 }
 
-export default withRouter(connect(mapStateToProps)(AuthenticatedComponent));
+export default withRouter(connect(mapStateToProps)(Auth));

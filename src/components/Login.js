@@ -38,16 +38,20 @@ class Login extends Component {
                         <div className="content--info">
                             <div className="content--info--header">  
                                 <Typist className="MyTypist">
-                                    <span> Make it Beautiful </span>
-                                    <Typist.Backspace count={10} delay={5000} />
-                                    <span> Nice </span>
+                                    <span> Take your notes at school </span>
+                                    <Typist.Backspace count={7} delay={5000} />
+                                    <span> home </span>
                                     <Typist.Backspace count={5} delay={5000} />
-                                    <span> infomative </span>
+                                    <span> a station </span>
+                                    <Typist.Backspace count={16} delay={5000} />
+                                    <span> at work </span>
+                                    <Typist.Backspace count={9} delay={5000} />
+                                    <span> at the pub </span>
                                 </Typist>   
                             </div>
                             <p className="content--info--sub"> Take your notes anywhere </p>
                             <button className="content--info--button" onClick={this.props.googleLogin}>
-                            Login with G
+                            Login with Google
                             </button>
                     </div>
                     </div>

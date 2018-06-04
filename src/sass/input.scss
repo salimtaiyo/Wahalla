@@ -1,12 +1,8 @@
+// the main div for the notes page
 .main{
     display: flex;
     justify-content: space-between;
     
-    &__left{
-        // background-color: rgb(194, 71, 71);
-
-    }
-
     &__right{
         margin-left: 2rem;
         padding: 2rem;
@@ -35,10 +31,10 @@
 
     &--textArea{
         width: 60vw;
-        height: 80rem;
+        height: 70rem;
         overflow:hidden;
         background-color:rgba(255, 255, 255, 0.918);
-        color:#222;
+        color:rgba(34, 34, 34, 0.904);
         font-family:Courier, monospace;
         font-weight:normal;
         font-size:24px;
@@ -51,6 +47,7 @@
         background-image:url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
         background-repeat:repeat-y, repeat;
         border-radius:12px;
+        border: transparent;
     }
 }
 
@@ -92,3 +89,4 @@
         0 0 1px 45px rgba(#8A3B58, 0.1);
     }
 }
+

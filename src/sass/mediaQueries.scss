@@ -1,0 +1,52 @@
+@media only screen and (max-width: 800px) {
+
+    // notes page
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+
+        &__left{
+            text-align: center; 
+            width: 5vw;           
+        }
+    }
+
+    .savedNotes{
+        transform: translate(80%,0);
+     
+
+        &:hover{
+            transform: translate(80%, 1%);
+        }
+    }
+
+    .left--name{
+        transform: translate(20%,0);
+        padding: 2rem;
+        margin: 0 auto;
+        width: 30rem;
+    }
+
+    .right--textArea{
+        background-position: 100% 100%;
+        background-size: 100%;
+        height: 55rem;
+    }
+
+    // home page 
+    .login__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content--info{
+        &--header{
+        font-size: 2.2rem;
+        }
+        &--sub{
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
