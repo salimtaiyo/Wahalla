@@ -1,0 +1,40 @@
+.savedNotes{
+    text-align: center;
+    height: auto;
+    width: 35vw;
+    box-shadow: 10px 10px 31px -5px rgba(0,0,0,0.75);
+    transform: translate(0,-1%);
+    transition: all .3s linear;
+
+    &:hover{
+        transform: translate(0,0); 
+        box-shadow: 5px 5px 15px -2px rgba(0,0,0,0.75);
+    }
+    &__header{
+        font-size: 1.5rem;
+        padding: 1rem;
+        transition: all .3s linear;
+
+        &:hover{
+            color: rgba(255, 0, 0, 0.815);
+            cursor: pointer;
+        }
+    }
+
+    &__del, &__edit{
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.822);
+        color: rgba(255, 255, 255, 0.884);
+        padding: 1rem;
+    }
+
+    &__edit a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.904);
+    }
+    
+}
+
+#savedNotes__body{
+    font-size: 1.2rem;
+}

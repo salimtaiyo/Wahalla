@@ -1,0 +1,65 @@
+$font: sans-serif;
+$blue: rgba(66, 134, 244, 0.945);
+$red:  rgba(219, 69, 55, 0.938);
+$yellow: rgba(244, 179, 0, 0.959);
+$green: rgba(15, 157, 88, 0.904);
+$colors-list: $blue $red $yellow $green;
+
+
+.loading {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    transform: translate(0,250%);
+    
+    &__header{
+        font-family: $font;
+        font-size: 7rem;
+        text-align: center;
+        letter-spacing: -8px;
+        margin-top: 0;
+        span {
+            &:first-child { color: $blue; }
+            &:nth-child(2) { color: $red; }
+            &:nth-child(3) { color: $yellow; }
+            &:nth-child(4) { color: $blue; }
+            &:nth-child(5) { color: $green; }
+            &:nth-child(6) { color: $red; }
+            &:last-child { 
+                color: $red; 
+                transform: rotate(-20deg);
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.wahalla-loader {
+	display: block;
+	span {
+		display: inline-block;
+		margin-top: 10px;
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		&:not(:first-child) { margin-left: 10px; }
+	}
+	@each $current-color in $colors-list {
+		$i: index($colors-list, $current-color);
+		$t: $i * -0.25;
+		span:nth-child(#{$i}) {
+			background: $current-color;
+			animation: move 1s ease-in-out (#{$t}s) infinite alternate;
+		}
+	}
+}
+
+@keyframes move {
+	from { transform: translateY(-10px); }
+	to { transform: translateY(5px); }
+}
+
+
+			

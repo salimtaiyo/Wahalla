@@ -1,0 +1,184 @@
+
+// login container
+.login{
+    animation: change 30s infinite linear;
+    // animation-delay: 5s;
+    height: 100vh;
+    z-index: 100;
+    overflow: hidden;
+
+    &__container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    &__content{
+        transform: translate(0, 10rem);
+        display: flex;
+        height: 50rem;
+        overflow: hidden;
+    }
+}
+
+
+// contents for the homepage
+.content{
+    // main home image
+    &--img{
+        width: 50vw;
+        position: relative;
+    }
+
+    // info homepage
+    &--info{
+        transform: translate(0, 15rem);
+        text-align: left;
+        margin-left: 3rem;
+
+        &--header{
+            font-size: 4rem;
+        }
+
+        &--sub{
+            font-size: 2rem;
+        }
+
+        &--button{
+            color: white;
+            border: transparent;
+            background-color: black;
+            padding: 1.4rem;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.logo--text{
+    font-size: 4rem;
+    font-family: 'Satisfy', cursive;
+}
+.img--1, .img--2, .img--3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.img--1{
+    background-image: url('https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/9398/assets/blocks/content/home-summer-2017/hero/music-overlay-1-1000w.png?2');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    animation:fadeImg 24s infinite;
+    
+    
+}
+
+.img--2{
+    background-image: url('https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/9398/assets/blocks/content/home-summer-2017/hero/real-estate-overlay-1-2500w.png?2');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    animation:fadeImg2 24s infinite;
+    
+}
+
+.img--3{
+    background-image: url('https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/9398/assets/blocks/content/home-summer-2017/hero/wellness-overlay-1-2500w.png?2');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    animation:fadeImg3 24s infinite;
+    
+}
+
+@keyframes change{
+
+    0%{
+        background-color: rgba(247, 242, 242, 0.945);
+        color: rgba(32, 32, 32, 0.945);
+    }
+
+    20%{
+        
+        // background-image: url('');
+        background-color: rgba(36, 36, 36, 0.945);
+        color: rgba(255, 255, 255, 0.945);
+
+    }
+
+    40%{
+        background-color: rgba(116, 38, 38, 0.945);
+        color: rgba(255, 255, 255, 0.945);
+
+    }
+
+    60%{
+        background-color: rgba(57, 151, 163, 0.945);
+        color: rgba(255, 255, 255, 0.945);
+
+    }
+
+    80%{
+        // background-color: rgba(167, 201, 74, 0.945);
+        background-color: rgba(39, 113, 131, 0.945);
+        color: rgba(255, 255, 255, 0.945);
+
+    }
+
+    100%{
+        background-color: rgba(247, 242, 242, 0.945);
+        color: rgba(32, 32, 32, 0.945);
+
+    }
+
+}
+
+
+// images 
+
+
+// @keyframes fadeImg
+// {
+//   0%   {opacity:1}
+//   30% { opacity: 0;
+//         display: none;
+//     }
+//   66.666% { opacity: 0}
+//   100% { opacity: 0}
+// }
+// @keyframes fadeImg2
+// {
+//   0%   {opacity:0}
+//   40% { opacity: 1}
+//   58% { opacity: 0 }
+//   100% { opacity: 0}
+// }
+// @keyframes fadeImg3
+// {
+//   0%   {opacity:0}
+//   33.333% { opacity: 0}
+//   70% { opacity: 1}
+//   92% { opacity: 0}
+//   100%{ opacity: 0}
+// }
+
+@keyframes fadeImg
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fadeImg2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fadeImg3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
